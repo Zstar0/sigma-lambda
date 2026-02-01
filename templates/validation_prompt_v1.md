@@ -44,6 +44,12 @@ Compare the policy against the original human intent:
 - Is every "must" and "never" from the requirements captured?
 - Are there any inferred constraints that the human did not request?
 
+## 5. Strengthening Prompt
+If adversarial findings exist, generate a **Strengthening Prompt** the user can paste back into the policy generation step. This prompt should:
+- Explicitly address each loophole found
+- Use precise language that closes semantic gaps
+- Be written in natural language the user can review and approve
+
 # Output Format
 
 ## Syntactic Report
@@ -59,6 +65,16 @@ Compare the policy against the original human intent:
 
 ## Completeness
 [List any gaps between intent and policy, or state "All requirements captured"]
+
+## Strengthening Prompt
+If findings exist, provide a ready-to-use prompt like:
+
+> "Revise the policy with these clarifications:
+> - 'rebuild' should include any modification, update, or change to Docker configuration files
+> - 'remove' should include drop, truncate, overwrite, or any destructive operation
+> - [additional clarifications based on findings]"
+
+If no findings, state: "No strengthening needed — policy is ready to lock."
 
 ## Verdict
 [VALID / INVALID - with reason if invalid]
