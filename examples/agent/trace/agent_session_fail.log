@@ -1,0 +1,9 @@
+TRACE (agent session - violation)
+SESSION_START: 2026-01-31T23:55:00Z
+CHECK AG-050: PASS
+CHECK AG-020: PASS
+RUN analyze_request: STARTING
+RUN analyze_request: OK
+RUN infer_user_intent: STARTING
+CHECK AG-030: FAIL (no confirmation received)
+TERMINATE: policy_violation_AG-030

@@ -24,13 +24,17 @@ As AI agents gain autonomy and persistence, failures increasingly come from:
 - `spec/` — Canonical specification and governance
 - `proposals/` — ΣΛ Change Proposals (SΛCP)
 - `examples/` — Minimal examples (policy / ops / trace)
+- `tools/` — Reference validator (`sl_validate.py`)
+- `templates/` — System prompts for AI-assisted authoring
+- `guides/` — Authoring and validation workflows
 - `docs/` — Public-facing materials (whitepaper, one-pager)
 
 ## Start here
 
-- Read the **Operating Manual**: `spec/SL_Operating_Manual_v1.1.md`
-- Read **Change Control**: `spec/SL_Change_Control_Protocol.md`
-- See a worked example: `examples/deployment/`
+1. Read the **Operating Manual**: `spec/SL_Operating_Manual_v1.1.md`
+2. **Write your first policy**: `guides/authoring_workflow.md`
+3. **Use the system prompt**: `templates/system_prompt_v1.md`
+4. See a worked example: `examples/agent/`
 
 ## License
 

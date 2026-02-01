@@ -1,0 +1,8 @@
+TRACE (example with violation)
+CHECK EX-010: PASS
+CHECK EX-001: PASS
+RUN deploy.sh: OK
+RUN verify.sh: FAIL
+CHECK EX-030: FAIL
+RUN rollback: INITIATED
+TERMINATE: rollback_complete
