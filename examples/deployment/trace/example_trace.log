@@ -1,0 +1,7 @@
+TRACE (example)
+CHECK EX-010: PASS
+CHECK EX-001: PASS
+RUN deploy.sh: OK
+RUN verify.sh: OK
+CHECK post_deploy_valid: PASS
+TERMINATE: deploy_complete
