@@ -1,5 +1,7 @@
 # ΣΛ (Sigma–Lambda)
 
+**🌐 [sigmalambda.dev](https://www.sigmalambda.dev/)**
+
 ΣΛ is a **constraint protocol** for safe, auditable AI systems. It preserves human intent under automation by separating:
 
 - **Policy** (what must be true / what must never happen / when to stop)
